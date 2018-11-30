@@ -14,7 +14,7 @@ struct RobotController
 		commands.emplace_back(&command);
 	}
 
-	void undo_commands(std::int64_t n)
+	void undo_commands(std::size_t n)
 	{
 		std::cout << "Undoing last "<< n <<" commands." << std::endl;
 		while (n && commands.begin() != commands.end())
